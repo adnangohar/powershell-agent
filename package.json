@@ -1,0 +1,25 @@
+{
+  "name": "powershell-agent",
+  "version": "1.0.0",
+  "description": "PowerShell + Claude Agent SDK integration with conversation context and session management",
+  "main": "dist/cli/ask-claude.js",
+  "scripts": {
+    "build": "tsc",
+    "ai": "node dist/cli/ask-claude.js",
+    "ai:dev": "tsx src/cli/ask-claude.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.1.14",
+    "dotenv": "^17.2.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
